@@ -1,0 +1,32 @@
+{
+  "name": "wait-for-it",
+  "version": "1.0.0",
+  "description": "Ensures that an asynchronous activity has completed (just once) before allowing all users of that activity to continue execution.",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:brightcove/wait-for-it.git"
+  },
+  "keywords": [
+    "async",
+    "monitor",
+    "synchronization"
+  ],
+  "author": "Jon-Carlos Rivera",
+  "license": "APLv2",
+  "bugs": {
+    "url": "https://github.com/brightcove/wait-for-it/issues"
+  },
+  "homepage": "https://github.com/brightcove/wait-for-it",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-simple-mocha": "^0.4.0",
+    "load-grunt-tasks": "^1.0.0",
+    "mocha": "^2.0.1",
+    "sinon": "^1.12.2"
+  }
+}
