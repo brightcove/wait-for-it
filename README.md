@@ -19,7 +19,7 @@ getIndex = function (req, res, next) {
   var notifyFn = fileMon.add('index.html', next);
 
   // if notifyFn is not null then we should start the activity
-  if (signalFn) {
+  if (notifyFn) {
 
     // Perform potentially slow asynchronous operation that builds 'index.html'
     createIndexIfItDoesntExist(function (err) {
@@ -29,7 +29,7 @@ getIndex = function (req, res, next) {
         return readIndexFile(notifyFn);
       }
 
-      signalFn(err);
+      notifyFn(err);
     });
   }
 }
